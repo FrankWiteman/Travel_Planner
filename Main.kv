@@ -1,0 +1,129 @@
+<ProfileScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+
+        Label:
+            text: "Profile Screen"
+            font_size: 24
+
+<PlanTripScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+
+        Label:
+            text: "Plan a Trip"
+            font_size: 24
+
+<BookRideScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+
+        Label:
+            text: "Book a ride"
+            font_size: 24
+
+<SettingsScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+
+        Label:
+            text: "Settings"
+            font_size: 24
+
+<LoginScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 30
+        spacing: 10
+
+        Label:
+            text: "Quick View Menu"
+            font_size: 24
+
+        GridLayout:
+            cols: 2
+            spacing: 12
+
+            Label:
+                text: "Username:"
+                font_size: 16
+            TextInput:
+                id: existing_username_input
+                hint_text: 'Enter your Username'
+
+            Label:
+                text: "Password:"
+                font_size: 16
+            TextInput:
+                id: existing_password_input
+                hint_text: 'Password'
+                password: True
+
+        Button:
+            text: 'Log In'
+            size_hint: (None, None)
+            size: (90, 50)
+            on_press: root.login()
+
+        Label:
+            text: '-------------'
+            font_size: 20
+
+        GridLayout:
+            cols: 2
+            spacing: 10
+
+            Label:
+                text: "Create Username:"
+                font_size: 16
+            TextInput:
+                id: new_username_input
+                hint_text: 'Create a Username'
+
+            Label:
+                text: "Create Password:"
+                font_size: 16
+            TextInput:
+                id: new_password_input
+                hint_text: 'Create a password'
+                password: True
+
+        Button:
+            text: 'Create Account'
+            size_hint: (None, None)
+            size: (150, 50)
+            on_press: root.create_account()
+
+        Label:
+            text: '---------------------'
+            font_size: 20
+
+        Label:
+            text: "Login with Social Media:"
+            font_size: 20
+
+        GridLayout:
+            cols: 3
+            spacing: 10
+
+            Button:
+                text: 'Facebook'
+                size_hint: (None, None)
+                size: (150, 50)
+                on_press: root.login()
+
+            Button:
+                text: 'Twitter'
+                size_hint: (None, None)
+                size: (150, 50)
+                on_press: root.login()
+
+            Button:
+                text: 'Google'
+                size_hint: (None, None)
+                size: (150, 50)
+                on_press: root.login()
