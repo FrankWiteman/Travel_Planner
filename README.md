@@ -6,4 +6,4 @@ Booking hotels.
 
 The .kv file is just a sample frame of what the Login screen looks like
 
-NB: this is just a snippet and may include errors and failures.
+NB: this is just a snippet and may include errors and failures. this will be updated from time to time, and any progress made will be tracked and updated
